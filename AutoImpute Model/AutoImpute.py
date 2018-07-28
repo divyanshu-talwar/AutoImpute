@@ -28,7 +28,7 @@ parser.add_argument('--iterations', type=int, default=7000, help="Number of iter
 parser.add_argument('--threshold', type=int, default=0.0001, help="To stop gradient descent after the change in loss function value in consecutive iterations is less than the threshold, implying convergence.")
 
 # Data
-parser.add_argument('--data', type = str, default='blakeley.csv', nargs = '+', help = "Dataset to run the script on. Can choose from : ['blakeley.csv', 'jurkat-293T.mat', 'kolodziejczyk.csv', 'PBMC.csv', 'preimplantation.mat', 'mouse_brain.mat', 'usoskin.csv']")
+parser.add_argument('--data', type = str, default='blakeley.csv', nargs = '+', help = "Dataset to run the script on. Can choose from : ['blakeley.csv', 'jurkat-293T.mat', 'kolodziejczyk.csv', 'PBMC.csv', 'preimplantation.mat', 'quake.csv', 'usoskin.csv', 'zeisel.csv']")
 
 # Run the masked matrix recovery test
 parser.add_argument('--masked_matrix_test', type = bool, default=False, nargs = '+', help = "Run the masked matrix recovery test?")
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 	            log.write('Step\tLoss\tLoss per Cell\t Change \n')
 
 	# reading dataset
-	datasets = ['blakeley', 'jurkat-293T', 'kolodziejczyk', 'PBMC', 'preimplantation', 'mouse_brain', 'usoskin']
+	datasets = ['blakeley', 'jurkat-293T', 'kolodziejczyk', 'PBMC', 'preimplantation', 'quake', 'usoskin', 'zeisel']
 	try:
 		extn = FLAGS.data.split('.')[1]
 		if(extn == 'mat'):
