@@ -68,7 +68,9 @@ if __name__ == '__main__':
 			processed_count_matrix = np.array(processed_count_matrix)
 		else:
 			print("data/" + FLAGS.data)
-			processed_count_matrix = np.loadtxt(open("data/" + FLAGS.data, "rb"), delimiter=",", skiprows=1)
+			with open("data/" + FLAGS.data) as f:
+			    ncols = len(f.readline().split(','))
+			processed_count_matrix = np.loadtxt(open("data/" + FLAGS.data, "rb"), delimiter=",", skiprows=1, usecols=range(1,ncols+1))
 	except :
 		print("[!data read] Please make sure that your processed dataset is in data/ in .mat or .csv format and you have entered the filename as data parameter. e.g. blakeley.csv")
 		exit()
