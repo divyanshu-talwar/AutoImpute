@@ -5,7 +5,7 @@ Divyanshu Talwar, Aanchal Mongia, Debarka Sengupta, and Angshul Majumdar
 ## Introduction
 `AutoImpute` is an auto-encoder based gene-expression (sparse) matrix imputation.
 
-For detailed information refer to our paper titled "AutoImpute : Autoencoder based imputation of single cell RNA-seq data".
+For detailed information refer to our paper titled "[AutoImpute : Autoencoder based imputation of single cell RNA-seq data](https://www.nature.com/articles/s41598-018-34688-x)".
 
 -	For technical problems, please report to [Issues](https://github.com/divyanshu-talwar/AutoImpute/issues).
 
@@ -16,27 +16,9 @@ The input to `AutoImpute.py` is a pre-processed count single cell matrix, with c
 
 ## Dependencies
 * For Python (2.7):
-    * numpy
-    * scikit-learn
-    * tensorflow
-    * matplotlib
+    > numpy, scikit-learn, tensorflow, matplotlib.
 * For R (pre-processing):
-	* R.matlab
-	* Matrix
-	* ggplot2
-	* Rtsne
-	* svd
-	* plyr
-	* dplyr
-	* data.table
-	* mclust
-	* flexclust
-	* reshape2
-	* irlba
-	* dynamicTreeCut
-	* RColorBrewer
-	* GenSA
-	* gplots
+	> R.matlab, Matrix, ggplot2, Rtsne, svd, plyr, dplyr, data.table, mclust, flexclust, reshape2, irlba, dynamicTreeCut, RColorBrewer, GenSA, gplots
 
 ## Contents
 * `AutoImpute\ Model/AutoImpute.py` - is the AutoImpute imputation model.
