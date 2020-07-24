@@ -64,3 +64,16 @@ Rscript pre-process.R <input-file-name> <dataset-name>
 ```bash
 Rscript pre-process.R Blakeley_raw_data.csv blakeley
 ```
+## How to cite
+```
+@article{article,
+author = {Talwar, Divyanshu and Mongia, Aanchal and Sengupta, Debarka and Majumdar, Angshul},
+year = {2018},
+month = {11},
+pages = {},
+title = {AutoImpute: Autoencoder based imputation of single-cell RNA-seq data},
+volume = {8},
+journal = {Scientific Reports},
+doi = {10.1038/s41598-018-34688-x}
+}
+```
