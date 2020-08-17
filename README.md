@@ -74,6 +74,7 @@ Rscript pre-process.R Blakeley_raw_data.csv blakeley
   number={1},
   pages={16329},
   year={2018},
-  publisher={Nature Publishing Group}
+  publisher={Nature Publishing Group},
+  DOI = "https://doi.org/10.1038/s41598-018-34688-x"
 }
 ```
